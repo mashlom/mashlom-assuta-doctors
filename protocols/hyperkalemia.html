@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>פרוטוקלי מלר"ד - היפרקלמיה - אסותא אשדוד</title>
+<link rel="manifest" href="../common/manifest.json">
+<link href="../3rd-party/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../3rd-party/fontawesome/fontawesome-free-6.5.1-web/css/all.min.css">
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="css/protocol-common.css" />
+<link rel="stylesheet" href="css/hyperkalemia.css">
+
+<link rel="icon" href="/assets/logo/fav-icon96x96.png">
+<meta property='og:title' content="פרוטוקול היפרקלמיה, מיון מבוגרים, אסותא אשדוד"/>
+<meta property='og:type' content='Article'/>
+<meta property="og:image:type" content="image/jpeg" />
+<meta property='og:site_name' content='mashlom.me'/>
+<meta property='og:image' content='https://assuta.mashlom.me/assets/logo/FullLogo1200x630.jpg'/>
+<meta property="og:image:secure_url" content="https://assuta.mashlom.me/assets/logo/FullLogo1200x630.jpg" />
+<meta property='og:url' content="https://assuta.mashlom.me/protocols/hyperkalemia"/>
+<meta property='og:description' content="פרוטוקול טיפול בהיפרקלמיה"/>
+<meta name="description" content="פרוטוקול טיפול בהיפרקלמיה" />
+<meta name="keywords" content="assuta ashdod, רופאים, מחשבונים, מיון, מלרד, מיון מבוגרים, hyperkalemia, היפרהיפרקלמיה, עודף באשלגן, אסותא אשדוד" />
+<meta name="robots" content="index, follow, NOODP" />
+</head>
+<body ng-app="app" ng-controller="HyperkalemiaController as ctrl" >
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J85BPCEQ2Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J85BPCEQ2Y');
+</script>
+<nav class="navbar navbar-expand-lg header">
+  <div style="width: 20%;height:100%; text-align: right;">
+    <img class="header-assuta-logo" src="../assets/assuta/only-alef.png" >
+  </div>
+  <div class="header-text">
+    <p>
+      mashlom.me בשיתוף עם בית<br>
+      החולים אסותא אשדוד
+    </p>
+  </div>
+  <div style="width: 15%;height:100%; text-align: left; vertical-align: middle">
+    <img class="header-mashlom-logo" src="../assets/logo/IconOnly_Transparent_NoBuffer.png" >
+  </div>
+</nav>
+<div id="hyperkalemia-main" class="container protocols-main">  
+  <breadcrumb page-title="'היפרקלמיה'"></breadcrumb>
+  <div class="group-container">
+    <div style="padding-right: 10px;padding-left: 10px;">
+        <div class="row form-group">
+            <div class="col-auto fs-3 ">
+                <h1>היפרקלמיה</h1>
+            </div>
+            <div class="col-auto me-auto">
+              <button ng-click="ctrl.toggleCollabse()" type="button" class="btn btn-light border buttons-color fs-6" style="min-width: 80px;padding:3px;">{{ctrl.isExpanded ? "כווץ" : "פתח הכל"}}</button>
+            </div>
+        </div>  
+    </div>
+  </div>
+  <div class="accordion accordion-flush" id="accordionProtocolLevel">
+    <div ng-repeat="section in ctrl.sections" class="accordion-item">
+      <h2 class="accordion-header" id="protocolHeadingOne_{{section.id}}">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#{{section.id}}" aria-expanded="false" aria-controls="{{section.id}}" ng-click="ctrl.blurButton($event)">
+          {{section.displayName}}
+        </button>
+      </h2>
+      <div id="{{section.id}}" class="accordion-collapse collapse" aria-labelledby="protocolHeadingOne_{{section.id}}">
+        <div class="accordion-body">
+          <div ng-if="section.id === 1">
+            <div>
+              <span>
+                סיווג
+              </span>
+              <div class="case-sub-section complaint-section" >
+                <ul style="list-style-type:none; padding-inline-start: 5px; margin-block-end: 0">
+                  <li ng-repeat="case in section.caseTypes">
+                    {{case}}
+                  </li>
+                </ul>    
+              </div>
+            </div>
+            <div style="margin-top: 0.5rem;">
+              <span>
+                תיאור התלונה
+              </span>
+              <div class="case-sub-section complaint-section">
+                <ul class="list-items-only-bullets">
+                  <li ng-repeat="desc in section.caseDecription">
+                    {{desc}}
+                  </li>                
+                </ul>
+              </div>
+            </div>
+            <div style="margin-top: 0.5rem;">
+              <span>
+                גורמי סיכון
+              </span>
+              <div class="case-sub-section complaint-section">
+                <ul class="list-items-only-bullets">
+                  <li ng-repeat="risk in section.riskFactors">
+                    {{risk}}
+                  </li>                
+                </ul>
+              </div>
+            </div>
+          </div>
+          <bullets items="section.listItems"></bullets>
+          <div>
+              {{section.imageDescription}}
+            <img ng-if="!!section.imageSource" style="max-width: 80dvw;margin-right:10px; " ng-src="{{section.imageSource}}">
+          </div>
+        </div>
+      </div>
+    </div>  
+</div>  
+<script src="../3rd-party/angularjs/angular.min.js"></script>
+<script src="../3rd-party/angularjs/angular-sanitize.min.js"></script>
+<script src="../3rd-party/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="js/hyperkalemia.js"></script>
+<script src="js/protocols-components.js"></script>
+</body>
+</html>

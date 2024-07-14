@@ -1,0 +1,101 @@
+{
+  "protocols": [
+    {
+      "name": "היפרקלמיה",
+      "link": "./hyperkalemia",
+      "subsections": [
+        { "displayName": "תלונה", "id": "1" },
+        { "displayName": "קבלה סיעודית", "id": "2" },
+        { "displayName": "בירור", "id": "3" },
+        { "displayName": "טיפול", "id": "4" },
+        { "displayName": "ניהול שוטף של המטופל", "id": "5" },
+        { "displayName": "החלטה", "id": "6" },
+        { "displayName": "המלצות בשחרור", "id": "7" }
+      ]
+    },
+    {
+      "name": "אצירת שתן",
+      "link": "./urinary-retention",
+      "subsections": [
+        { "displayName": "תלונה - אצירת שתן", "id": "1" },        
+        { "displayName": "בירורים", "id": "3" },
+        { "displayName": "טיפול תרופתי מומלץ", "id": "4" },
+        { "displayName": "הוראות מומלצות", "id": "5" },
+        { "displayName": "סוגיות ספציפיות למטופל", "id": "6" },
+        { "displayName": "התוויות נוספות", "id": "7" },
+        { "displayName": "התוויות לאשפוז", "id": "2" },
+        { "displayName": "שחרור", "id": "8" }
+      ]
+    },
+    {
+      "name": "דלקת קרום המוח נגיפית",
+      "link": "./meningitis",
+      "subsections": [
+        { "displayName": "תלונה - דלקת קרום המוח נגיפית", "id": "1" },        
+        { "displayName": "בירורים", "id": "3" },
+        { "displayName": "טיפול תרופתי מומלץ", "id": "4" },
+        { "displayName": "הוראות מומלצות", "id": "5" },
+        { "displayName": "התוויות נוספות", "id": "7" },
+        { "displayName": "התוויות לאשפוז", "id": "2" },
+        { "displayName": "שחרור", "id": "8" }
+      ]
+    },
+    {
+      "name": "פיאלונפריטיס",
+      "link": "./pyelonephritis",
+      "subsections": [
+        { "displayName": "תלונה - פיאלונפריטיס", "id": "1" },        
+        { "displayName": "בירורים", "id": "3" },
+        { "displayName": "טיפול תרופתי מומלץ", "id": "4" },
+        { "displayName": "הוראות מומלצות", "id": "5" },
+        { "displayName": "סוגיות ספציפיות למטופל", "id": "6" },
+        { "displayName": "התוויות נוספות", "id": "7" },
+        { "displayName": "התוויות לאשפוז", "id": "2" },
+        { "displayName": "שחרור", "id": "8" }
+      ]
+    },
+    {
+      "name": "מנת יתר של קומודין",
+      "link": "./warfarin_overdose",
+      "subsections": [
+        { "displayName": "תלונה - בחילות והקאות בהריון מוקדם", "id": "1" },      
+        { "displayName": "בירורים", "id": "3" },
+        { "displayName": "טיפול תרופתי מומלץ", "id": "4" },
+        { "displayName": "גורמי סיכון לדמם", "id": "10" },
+        { "displayName": "הוראות מומלצות", "id": "5" },
+        { "displayName": "הנחיות ספציפיות למעקב סיעודי", "id": "9" },
+        { "displayName": "סוגיות ספציפיות למטופל", "id": "6" },
+        { "displayName": "התוויות נוספות", "id": "7" },
+        { "displayName": "התוויות לאשפוז", "id": "2" },
+        { "displayName": "שחרור", "id": "8" }
+      ]
+    },
+    {
+      "name": "אסטמה",
+      "link": "./asthma",
+      "subsections": [        
+        { "displayName": "בירורים", "id": "3" },
+        { "displayName": "טיפול תרופתי מומלץ", "id": "4" },
+        { "displayName": "הוראות מומלצות", "id": "5" },
+        { "displayName": "הנחיות ספציפיות למעקב סיעודי", "id": "9" },
+        { "displayName": "סוגיות ספציפיות למטופל", "id": "6" },
+        { "displayName": "התוויות נוספות", "id": "7" },
+        { "displayName": "התוויות לאשפוז", "id": "2" },
+        { "displayName": "שחרור", "id": "8" }
+      ]
+    },
+    {
+      "name": "פרפור פרוזדורים",
+      "link": "./atrial_fibrillation",
+      "subsections": [
+        { "displayName": "תלונה - פרפור פרוזדורים", "id": "1" },        
+        { "displayName": "בירורים", "id": "3" },
+        { "displayName": "טיפול תרופתי מומלץ", "id": "4" },
+        { "displayName": "הנחיות ספציפיות למעקב סיעודי", "id": "9" },
+        { "displayName": "התוויות נוספות", "id": "7" },
+        { "displayName": "התוויות לאשפוז", "id": "2" },
+        { "displayName": "שחרור", "id": "8" }
+      ]
+    }
+  ]
+}

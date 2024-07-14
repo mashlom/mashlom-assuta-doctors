@@ -1,0 +1,143 @@
+  <!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>מה שלומי - אסותא אשדוד</title>
+<link rel="stylesheet" href="common/css/common.css">
+<link href="3rd-party/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link rel="manifest" href="common/manifest.json">
+<link rel="stylesheet" href="3rd-party/fontawesome/fontawesome-free-6.5.1-web/css/all.min.css">
+
+<link rel="icon" href="/assets/logo/fav-icon96x96.png">
+<meta property='og:title' content="mashlom.me אסותא אשדוד"/>
+<meta property='og:type' content='Article'/>
+<meta property="og:image:type" content="image/jpeg" />
+<meta property='og:site_name' content='mashlom.me'/>
+<meta property='og:image' content='https://assuta.mashlom.me/assets/logo/FullLogo1200x630.jpg'/>
+<meta property="og:image:secure_url" content="https://assuta.mashlom.me/assets/logo/FullLogo1200x630.jpg" />
+<meta property='og:url' content="https://assuta.mashlom.me"/>
+<meta property='og:description' content="כלי עזר יום יומיים לצוותים רפואיים ובתי חולים, אסותא אשדוד"/>
+
+<meta name="description" content="כלי עזר יום יומיים לצוותים רפואיים ובתי חולים, אסותא אשדוד" />
+<meta name="keywords" content="assuta ashdod, רופאים, מחשבונים, רפואת ילדים, אסותא אשדוד" />
+<meta name="robots" content="index, follow, NOODP" />
+
+<style>
+  html, body {
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    overflow-y: auto; 
+    background-color: #E5FFFA;
+  }
+  header {    
+    padding: 0;
+  }
+  .menu-link {
+    margin-top: 10px;
+    background-color: #3F6186;
+  }
+  main {
+    padding-bottom: calc(max(10dhv, 40px)); /*should be at leaset same as the height of the footer*/
+    overflow-y: auto;
+  }
+  header {
+    height: 20dvh;
+  }
+  footer {
+    text-align: center;
+    padding: 0;
+    background-color: #F0FFFD;
+    /* Stick the footer to the bottom */    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 9dvh;
+    min-height: 40px;
+    border-top: 1px solid #ccc;
+  }
+  .li-logo {
+    width: 10px;
+    height: 10px;
+  }
+  .guide-video {
+    width: 85dvw;
+    max-width: 390px;
+    max-height: 50dvh;
+    margin-top: 20px; 
+    
+  }
+  .video-container {
+    width: 100%;
+    margin-top: 30px; 
+  }
+  .page-content {
+    position: relative;
+    min-height: 100vh;  
+  }
+  .btn:hover {
+    background-color: #1FB5A3;
+  }
+</style>
+</head>
+<body>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J85BPCEQ2Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J85BPCEQ2Y');
+</script>
+<script>
+  window.onload = function() {
+    var isAndroid = /Android/i.test(navigator.userAgent);
+    var isiPhone = /iPhone/i.test(navigator.userAgent);
+    
+    var videoContainer = document.getElementById("video-element");
+    
+    if (isAndroid) {
+        videoContainer.innerHTML = '<video controls class="guide-video"><source src="assets/videos/guide-android.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
+        document.getElementById("video-container").style.display = 'block';
+    } else if (isiPhone) {
+        videoContainer.innerHTML = '<video controls class="guide-video"><source src="assets/videos/guide-iphone.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
+        document.getElementById("video-container").style.display = 'block';
+    }
+}
+</script>
+<div class="page-content">
+  <header>
+    <img src="assets/logo/FullLogo_Transparent.png" alt="Logo" style="height: 100%;">
+  </header>
+  <main>
+  <div class="list-group" style="width:100%; padding-right: 20%; padding-left: 20%;">
+    <a href="phototherapy/" class="btn btn-primary btn-lg menu-link">צהבת ביילוד</a>
+    <a href="triage/" class="btn btn-primary btn-lg menu-link">טריאז' מיון ילדים</a>
+    <a href="protocols/" class="btn btn-primary btn-lg menu-link">פרוטוקולי מלר"ד</a>
+    <!-- <a href="EOS/" class="btn btn-primary btn-lg menu-link">EOS</a> -->
+  </div> 
+  <div id="video-container" class="video-container" style="display: none;">
+    <div>
+    איך לשמור לינק ל mashlom על הסמארטפון שלכם: 
+  </div>
+    <div id="video-element">
+  </div>
+  </div>
+  </main>
+  <footer>
+    <div style="padding-top: 10px;">
+      <a href="https://www.linkedin.com/in/talavinari"><img class="li-logo" src="assets/LinkedIn_icon.png" alt="LinkedIn"></a>
+      טל אבינערי, <a href="mailto:talavinari@gmail.com">talavinari@gmail.com</a>
+    </div>
+    <div>
+      <a href="https://www.linkedin.com/in/yonatan-katz-a07b562/"><img class="li-logo" src="assets/LinkedIn_icon.png" alt="LinkedIn"></a>
+      יונתן כץ, <a href="mailto:katzyonatan@gmail.com">katzyonatan@gmail.com</a>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
