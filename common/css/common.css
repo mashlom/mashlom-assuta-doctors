@@ -35,6 +35,11 @@ html, body {
     border: 1px solid var(--border-color);     
   }
 
+  .form-group {
+    margin-top: 10px;
+  }
+
+
   .header-mashlom-logo {
     max-height: 45px;
     padding-left: 5px;
