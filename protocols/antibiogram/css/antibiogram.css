@@ -1,0 +1,106 @@
+:root {
+    --bs-primary-bg-subtle: #6585A0;
+  }
+  
+  html, body {
+      max-width: 700px; /* Set maximum width for the body */
+      direction: rtl; /* Right-to-left direction */
+      height: 100%;
+      scroll-behavior: smooth;
+      margin: 0 auto; /* Center the body horizontally */
+      padding: 0;
+      font-family: Arial, sans-serif;  
+      overflow: hidden;
+  }
+
+  .group-container .form-group .form-check {  
+    margin-right: 1rem; /* Adjust margin between form checks */
+  }
+  
+  .cards-container {
+      width: 100%; /* Set a width */
+      margin: 0 auto; /* Set margin to auto */
+  }
+  
+  .form-group {
+      margin-top: 20px;
+  }
+  
+  .info {
+      font-size: 24px;
+  }
+  
+  .protocols-main {
+    padding: 0px;
+    height: calc(100dvh - 50px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid var(--border-color);
+  }
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent !important; /* Set background color to transparent */
+}
+
+.accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.opened-accordion-color {    
+    color: white;
+    background-color: #6585A0;
+}
+
+.closed-accordion-color {    
+    /* color: #152D49; */
+    background-color: #FAFAFA;
+}
+
+
+.accordion-button::after {
+    background-image: initial;
+  }
+  
+.accordion-button:not(.collapsed)::after {
+    background-image: initial;
+}
+
+.accordion-button {
+    padding:8px;
+}
+
+.accordion-body {
+    padding:0px;
+}
+
+
+.list-group {
+    padding: 0px;
+}
+
+.list-group-item {
+    border-bottom: 1px solid #6585a0;
+    border-radius: 0; /* Remove rounded corners */
+}
+
+.list-group-item:nth-child(odd) {
+    border-bottom: 1px solid #6585a0;
+    border-radius: 0; /* Remove rounded corners */
+  }
+
+  .dropdown-item {
+    padding-right: 20px;
+  }
+
+  .section-header {
+    color: white;
+    background-color: #103C6E;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1rem;
+  }
+  
+  .bold-text {
+      font-weight: bold;
+  }
