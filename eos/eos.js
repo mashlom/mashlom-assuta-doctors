@@ -122,7 +122,7 @@ app.controller("EosController", ['$scope', '$rootScope', '$timeout', function($s
     }
 
     ctrl.isValidTemprature = function() {
-      return ctrl.temprature >= 36
+      return ctrl.temprature >= 36 && ctrl.temprature <= 40;
     };
 
     ctrl.isValidPreganancyWeek = function() {
